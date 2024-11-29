@@ -1418,3 +1418,42 @@ a {
         font-size: 1.2rem;
     }
 }
+
+/* Animação para h1 */
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: slideInFromBottom 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.titulo-servicos h1,
+.headline-portfolio .titulo,
+.conteudo-textos-case h1 {
+    animation: slideInFromBottom 0.8s ease-out forwards;
+    animation-play-state: paused;
+}
+
+.titulo-servicos h1.aos-animate,
+.headline-portfolio .titulo.aos-animate,
+.conteudo-textos-case h1.aos-animate {
+    animation-play-state: running;
+}
+
+/* Efeito hover nos h1 */
+h1:hover {
+    background: linear-gradient(45deg, var(--color-destaque1), var(--color-destaque2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.3s ease;
+}
