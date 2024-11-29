@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #40c9ff;
+        font-family: JetBrainsMono-Bold, 'JetBrains Mono';
+        font-size: 200.5px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #111019;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="0" y="0" width="256" height="256" rx="51.2" ry="51.2"/>
+  <text class="cls-1" transform="translate(67.85 191.62)"><tspan x="0" y="0">R</tspan></text>
+</svg>
