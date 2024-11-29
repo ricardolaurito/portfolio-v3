@@ -1004,7 +1004,7 @@ a {
 /*************** CONTATO *****/
 .contato {
     width: 100vw;
-    height: auto;
+    height: 100vh;
     display: flex;
     padding: 2rem 0rem 3rem 0rem;
     align-items: center;
@@ -1014,50 +1014,54 @@ a {
 
 .container-contato {
     width: 100%;
-    height: 100vh;
     max-width: 1400px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column;    
+    gap: 10px;
+    padding: 50px 0;
 }
 
 .headline-contato {
     width: 100%;
-    height: 40vh;
+    height: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 100px 0;
 }
 
-.titulo-contato {
-    height: 100%;
-    width: 50%;
+.titulo-contato {    
     display: flex;
-    align-items: center;
-    justify-content: left;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .titulo-contato h1 {
     color: var(--color-black);
-    width: 50%;
     font-size: 8vw;
     font-weight: lighter;
     font-family: var(--font-grande);
 }
 
-.descricao-contato {
-    width: 50%;
-    text-align: right;
-    margin-top: 720px;
-}
-
-.descricao-contato a {
-    text-decoration: none;
+.descricao-contato {    
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 15px;
     color: var(--color-black);
-    font-size: 2rem;
+    opacity: 0.8;
+    font-size: 1.5rem;
     letter-spacing: 1.5px;
     line-height: 1.4;
     font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.descricao-contato p:hover {
+    opacity: 1;
 }
 
 .conteudo-contato {
@@ -1419,7 +1423,40 @@ a {
     }
 }
 
-/* Animação para h1 */
+/* Títulos */
+.headline-servicos h1,
+.headline-portfolio h1,
+.titulo-contato h1 {
+    color: var(--color-black);
+    width: 50%;
+    font-size: 8rem;
+    font-weight: lighter;
+    font-family: var(--font-grande);
+}
+
+.titulo-servicos h1,
+.headline-portfolio .titulo,
+.titulo-contato h1 {
+    display: inline-block;
+    width: fit-content;
+}
+
+/* Efeito hover nos títulos */
+h1:hover,
+.headline-portfolio .titulo:hover,
+.titulo-servicos h1:hover,
+.titulo-contato h1:hover {
+    background: linear-gradient(45deg, var(--color-destaque1), var(--color-destaque2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: all 0.3s ease;    
+    display: inline-block;
+    cursor: default;
+}
+
+/* Animação para títulos */
 @keyframes slideInFromBottom {
     0% {
         transform: translateY(30px);
@@ -1431,29 +1468,128 @@ a {
     }
 }
 
-h1 {
-    animation: slideInFromBottom 0.8s ease-out forwards;
+[data-aos] h1,
+[data-aos].headline-portfolio .titulo,
+[data-aos].conteudo-textos-case h1 {
     opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.titulo-servicos h1,
-.headline-portfolio .titulo,
-.conteudo-textos-case h1 {
-    animation: slideInFromBottom 0.8s ease-out forwards;
-    animation-play-state: paused;
+[data-aos].aos-animate h1,
+[data-aos].aos-animate.headline-portfolio .titulo,
+[data-aos].aos-animate.conteudo-textos-case h1 {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.titulo-servicos h1.aos-animate,
-.headline-portfolio .titulo.aos-animate,
-.conteudo-textos-case h1.aos-animate {
-    animation-play-state: running;
+.copy-item {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    user-select: all;
 }
 
-/* Efeito hover nos h1 */
-h1:hover {
-    background: linear-gradient(45deg, var(--color-destaque1), var(--color-destaque2));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    transition: all 0.3s ease;
+.copy-item:hover {
+    opacity: 1;
+}
+
+.copy-item::after {
+    content: "Has click para copiar";
+    font-size: 1.4rem;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.copy-item:hover::after {
+    opacity: 0.7;
+}
+
+.copy-item.copied::after {
+    content: "Copied!";
+    color: #40c9ff;
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 12px;
+    background: var(--color-black);
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.toast.active {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+}
+
+.toast .toast-content .bi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    min-width: 35px;
+    color: #40c9ff;
+    font-size: 24px;
+}
+
+.toast .toast-content .message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.toast .message .text {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.toast .message .text.text-1 {
+    font-weight: 600;
+    color: #40c9ff;
+}
+
+.toast .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.toast .progress:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #40c9ff;
+}
+
+.toast.active .progress:before {
+    animation: progress 3s linear forwards;
+}
+
+@keyframes progress {
+    100% {
+        right: 100%;
+    }
 }

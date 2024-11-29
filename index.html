@@ -365,11 +365,9 @@
                     <div class="titulo-contato">
                         <h1>Contacto</h1>
                     </div>
-                    <div class="descricao-contato">
-                        <ul class="lista-contato">
-                            <li><a href="https://wa.me/+51969259345" target="_blank">WhatsApp: +51 969 259 345</a></li>
-                            <li><a href="mailto:helloworld@ricardolaurito.dev">helloworld@ricardolaurito.dev</a></li>
-                        </ul>
+                    <div class="descricao-contato">                  
+                            <p data-copytext="+51969259345" class="copy-item">WhatsApp: +51 969 259 345</p>
+                            <p data-copytext="helloworld@ricardolaurito.dev" class="copy-item">Email: helloworld@ricardolaurito.dev</p>                       
                     </div>
                 </div>
                 <div class="conteudo-contato" data-aos="fade-up" data-aos-delay="400">
@@ -427,14 +425,27 @@
             </div>
         </footer>
         <!--Fim Footer-->
-        <!-- Modal de mensagem -->
-        <div id="message-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <div id="modal-message"></div>
+
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="bi bi-check-circle"></i>
+            <div class="message">
+                <span class="text text-1">Sucesso!</span>
+                <span class="text text-2">Texto copiado para a área de transferência</span>
             </div>
         </div>
+        <div class="progress"></div>
+    </div>
 
+    <!-- Modal de mensagem -->
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-message"></div>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -447,12 +458,12 @@
         AOS.init();
     </script>
 
-    <!--JavaScript-->
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/actionButton.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/slideSobre.js"></script>
     <script src="assets/js/slidePortfolio.js"></script>
+    <script src="assets/js/actionButton.js"></script>
+    <script src="assets/js/email.js"></script>
+    <script src="assets/js/copyText.js"></script>
 
 </body>
 
