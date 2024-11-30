@@ -30,6 +30,12 @@ function sendEmail(e) {
     e.preventDefault();
 
     const form = document.getElementById('contact-form');
+    
+    // Validate form before sending
+    if (!validateForm(form)) {
+        return false;
+    }
+
     const btn = form.querySelector('button[type="submit"]');
     const originalBtnText = btn.innerHTML;
 
@@ -47,6 +53,8 @@ function sendEmail(e) {
         .then(function(response) {
             showModal('¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.');
             form.reset();
+            // Clear any remaining error states
+            form.querySelectorAll('input, textarea').forEach(input => clearError(input));
         }, function(error) {
             showModal('Lo siento, hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.', true);
         })
