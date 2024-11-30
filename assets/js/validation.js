@@ -4,7 +4,15 @@ function validateName(name) {
 }
 
 function validatePhone(phone) {
-    return /^[0-9]{6,15}$/.test(phone.replace(/\D/g, ''));
+    // Remove all non-digit characters from the phone number
+    const phoneDigits = phone.replace(/\D/g, '');
+    // Check if the phone number has between 6 and 15 digits
+    return phoneDigits.length >= 6 && phoneDigits.length <= 15;
+}
+
+function validateCountryCode(code) {
+    // Ensure code starts with + and contains 1-4 digits
+    return /^\+\d{1,4}$/.test(code);
 }
 
 function validateEmail(email) {
@@ -44,6 +52,15 @@ function validateForm(form) {
         isValid = false;
     } else {
         clearError(nameInput);
+    }
+
+    // Country code validation
+    const countryCodeInput = form.querySelector('#country_code');
+    if (!validateCountryCode(countryCodeInput.value)) {
+        showError(countryCodeInput, 'Código de país inválido');
+        isValid = false;
+    } else {
+        clearError(countryCodeInput);
     }
 
     // Phone validation

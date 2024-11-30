@@ -26,8 +26,8 @@ function showModal(message, isError = false) {
     }, 5000);
 }
 
-function sendEmail(e) {
-    e.preventDefault();
+function sendEmail(event) {
+    event.preventDefault();
 
     const form = document.getElementById('contact-form');
     
@@ -36,6 +36,12 @@ function sendEmail(e) {
         return false;
     }
 
+    const name = form.querySelector('input[name="name"]').value;
+    const countryCode = form.querySelector('#country_code').value;
+    const phone = form.querySelector('input[name="phone"]').value;
+    const email = form.querySelector('input[name="email"]').value;
+    const message = form.querySelector('textarea[name="message"]').value;
+
     const btn = form.querySelector('button[type="submit"]');
     const originalBtnText = btn.innerHTML;
 
@@ -43,10 +49,10 @@ function sendEmail(e) {
     btn.innerHTML = 'Enviando...';
 
     const templateParams = {
-        from_name: form.name.value,
-        phone: form.phone.value,
-        email: form.email.value,
-        message: form.message.value
+        from_name: name,
+        from_email: email,
+        phone_number: countryCode + ' ' + phone,
+        message: message
     };
 
     emailjs.send('service_50rhsz4', 'template_01', templateParams)
