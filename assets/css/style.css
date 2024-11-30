@@ -1854,13 +1854,26 @@ textarea.valid {
 }
 
 .suggestion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 8px 12px;
     cursor: pointer;
     transition: background-color 0.2s;
+    width: 100%;
+}
+
+.suggestion-item > * {
+    margin: 0 10px;
 }
 
 .suggestion-item:hover {
     background-color: #f5f5f5;
+}
+
+.country-code {
+    font-weight: bold;
+    color: #007BFF;
 }
 
 /* Ensure phone input takes remaining space */
