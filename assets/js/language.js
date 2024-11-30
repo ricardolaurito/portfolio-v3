@@ -18,15 +18,15 @@ const translations = {
     'es': {
         'inicio': {
             'titulo': 'Desarrollador Web',
-            'destaque': 'Creando experiencias unicas',
-            'descricao': '¿Tu presencia digital refleja realmente tu potencial? Soy el desarrollador que transforma visiones en experiencias digitales que cautivan y convierten. Fusiono diseño estratégico y código excepcional para crear sitios web que no solo impresionan, sino que generan resultados. Cada proyecto, transforma visiones en experiencias memorables.',
-            'botao': 'Contactarme',
+            'destaque': 'Creando experiencias únicas',
+            'descricao': '¿Tu presencia digital refleja realmente tu potencial? Soy el desarrollador que transforma visiones en experiencias digitales que cautivan y convierten. Combino diseño estratégico y código excepcional para crear sitios web que no solo impresionan, sino que generan resultados. Cada proyecto transforma visiones en experiencias memorables.',
+            'botao': 'Contacto',
             'quote': 'Los grandes proyectos se construyen juntos. Nadie enfrenta la vida solo.'
         },
         'sobre': {
-            'titulo': 'SOBRE',
+            'titulo': 'SOBRE MÍ',
             'saudacao': 'Hola, soy Ricardo Laurito',
-            'descricao': 'Me encantaría ayudarte a crear tu sitio web. Si tienes alguna pregunta, no dudes en contactarme.'
+            'descricao': 'Me encantaría ayudarte a crear tu sitio web. Si tienes alguna duda, no dudes en contactarme.'
         },
         // Adicione mais seções conforme necessário
     }
