@@ -93,4 +93,24 @@
         font-size: 1.75rem;
     }
 
+    /* .case1,
+    .case2,
+    .case3,
+    .case4 {    
+    height: 100vh;  
+
+    } */
+
+    .conteudo-textos-case h1 {
+        
+        font-size: 4.375rem;        
+    }
+
+    .conteudo-textos-case p {
+
+        font-size: 1.375rem;
+
+    }
+        
+
 }
