@@ -17,7 +17,8 @@
         font-size: 1.375rem;        
     }
 
-    /* SOBRE */
+    /************* SOBRE ***************/
+
     .headline-scroll span {
         font-size: 4.0625rem;
     }
@@ -38,7 +39,7 @@
         height: 90%; 
     }
 
-    /* HABILIDADES */ 
+    /************* HABILIDADES ************/ 
 
     .text-headline-skills h2 {
         font-size: 2.5rem;
@@ -59,7 +60,7 @@
         font-size: 1.75rem;
     }
 
-    /* SERVIÇOS */
+    /************ SERVIÇOS ************/
 
     .descricao-servicos {
         font-size: 1.75rem;
@@ -83,7 +84,7 @@
         font-size: 7.375rem;
     }
 
-    /* PORTFOLIO */
+    /************* PORTFOLIO ***********/
 
     .headline-portfolio .titulo {
         font-size: 7.375rem;    
@@ -112,5 +113,17 @@
 
     }
         
+    /********* CONTATO **********/
+
+    .titulo-contato h1 {  
+
+        font-size: 8rem;      
+    }
+
+    .formulario-contato p {
+
+        font-size: 1.375rem;
+        
+    }
 
 }
