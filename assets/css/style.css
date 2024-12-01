@@ -419,7 +419,7 @@ a {
     padding: 2rem 1rem;
     z-index: 1;
     user-select: none;
-    overflow: visible;
+    overflow: visible;       
 }
 
 .container-sobre {
@@ -428,7 +428,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;       
 }
 
 .headline-sobre {
@@ -438,14 +438,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: absolute;    
 }
 
 .headline-scroll {
     display: flex;
     align-items: center;
     white-space: nowrap;
-    animation: scroll 20s linear infinite;
+    animation: scroll 20s linear infinite;    
 }
 
 @keyframes scroll {
@@ -463,7 +463,7 @@ a {
     font-size: 5rem;
     text-transform: uppercase;
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 
 .headline-scroll .divisor {
@@ -471,7 +471,7 @@ a {
     height: 20px;
     background-color: rgba(64, 201, 255, 0.4);
     border-radius: 50%;
-    margin: 0 20px;
+    margin: 0 20px;    
 }
 
 .headline-scroll .bold {
@@ -489,7 +489,7 @@ a {
     top: 30%;
     width: 100%;
     height: 70%;
-    display: flex;
+    display: flex;    
 }
 
 .left-sobre {
@@ -500,12 +500,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    gap: 3rem;
+    gap: 3rem;    
+    
 }
 
 .textos-sobre h1 {
     font-size: 3rem;
-    font-family: var(--font-grande);
+    font-family: var(--font-grande);    
 }
 
 .textos-sobre p {
@@ -522,7 +523,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1.5rem;    
 }
 
 .redes-sociais a {
@@ -594,7 +595,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .headline-skills {
@@ -626,7 +627,7 @@ a {
 .conteudo-skills {
     display: grid;
     gap: 1rem;
-    width: 100%;
+    width: 100%;    
 }
 
 .box-skills {
@@ -677,7 +678,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem;    
 }
 
 .container-servicos {
@@ -688,7 +689,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .headline-servicos {
@@ -696,7 +697,7 @@ a {
     height: 40vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .titulo-servicos {
@@ -876,7 +877,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0rem 7rem 0rem;    
+    padding: 2rem 0rem 7rem 0rem;        
 }
 
 .container-portfolio {
@@ -886,7 +887,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;        
 }
 
 .headline-portfolio {
@@ -939,7 +940,7 @@ a {
     height: 100vh;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2rem;    
 }
 
 .imagens-case {
@@ -1062,7 +1063,7 @@ a {
     display: flex;
     flex-direction: column;    
     gap: 10px;
-    padding: 50px 0;
+    padding: 50px 0;    
 }
 
 .headline-contato {
@@ -1071,7 +1072,7 @@ a {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 100px 0;    
+    padding: 100px 0;       
 }
 
 .titulo-contato {    
@@ -1114,7 +1115,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;    
+    gap: 2rem;       
 }
 
 .formulario-contato {
@@ -1189,7 +1190,7 @@ textarea.valid {
     background-color: #ffffff;
     color: var(--color-black);
     font-weight: bold;
-    width: 190px;
+    width: 11.875rem;
     padding: 1rem 0rem;
     border: 2px solid rgba(128, 128, 128, 0.5);
     outline: none;
@@ -1215,7 +1216,8 @@ textarea.valid {
     border-radius: 36px;
 }
 
-/*************** FOOTER *****/
+/*************** FOOTER ***********/
+
 .footer {
     background-color: var(--color-black);
     width: 100%;
@@ -1250,7 +1252,8 @@ textarea.valid {
 }
 
 .logo-column img {
-    width: 100px;
+    width: 150px;
+    
 }
 
 .menu-column {
