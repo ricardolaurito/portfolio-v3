@@ -1,205 +1,96 @@
-/* Responsividade para iPad (tablet) */
-@media (max-width: 1024px) {
-
-    .container {
-        padding: 0;
-    }
-
-    /************************** SOBRE ***/
-    .sobre {
-        height: auto;
-    }
-
-    .container-sobre {
-        height: auto;
-    }
+@media (max-width: 1536px) {  
     
-    .headline-sobre {
-        height: auto;
-        position: relative;
+    .header {
+        border: #bd068f 2px solid;
+    }
+    /* INICIO */
+    .titulo-inicio {
+        font-size: 2.375rem;
     }
 
-    .conteudo-sobre {
-        flex-direction: column-reverse;
-        height: auto;
-        gap: 3rem;
+    .paragrafo-inicio p {
+        font-size: 1.75rem;
+        line-height: 1.7;
     }
 
-    .left-sobre {
-        width: 100%;
-        height: auto;
+    .quote {
+        font-size: 1.375rem;        
     }
 
-    .right-sobre {
-        width: 100%;
-        height: auto;
-    }
-
-    .imagem-sobre {
-        justify-content: center;
-    }
-
-    .complemento-sobre {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    /* SOBRE */
+    .headline-scroll span {
+        font-size: 4.0625rem;
     }
 
     .complemento-sobre img {
-        position: unset;
-        width: 100%;
+        
+        width: 95%;
+        height: 95%
     }
 
-    /************************** SERVIÇOS ***/
-
-    .headline-servicos {
-        flex-direction: column;
-        height: auto;
+    .imagem-sobre {
+        width: 95%;
+        height: 95%
     }
 
-    .titulo-servicos {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: left;
+    .imagem-sobre:first-child {
+        width: 90%;
+        height: 90%; 
     }
 
-    .titulo-servicos h1 {
-        font-size: 6rem;
+    /* HABILIDADES */ 
+
+    .text-headline-skills h2 {
+        font-size: 2.5rem;
     }
+    .text-headline-skills p {
+        font-size: 1.375rem;
+    }
+
+    .box-skills {
+        height: 440px;
+    }
+
+    .box-skills i {
+        font-size: 3.75rem;        
+    }
+
+    .box-skills h3 {
+        font-size: 1.75rem;
+    }
+
+    /* SERVIÇOS */
 
     .descricao-servicos {
-        width: 100%;
-        text-align: right;
-        font-size: 1.4rem;
+        font-size: 1.75rem;
     }
 
-    /************************** PORTFOLIO ***/
-
-    .container-portfolio {
-        gap: 2rem;
-        padding: 2rem 1rem;
+    .titulo-servicos h1,
+    .titulo-contato h1 {        
+        font-size: 7.875rem;        
     }
 
-    .headline-portfolio {
-        flex-direction: column;
-        height: auto;
+    .card-titulo {        
+        font-size: 1.875rem;        
     }
+
+    .card-servicos-left {       
+        width: 90%;
+        min-height: 170px;        
+    }
+
+    .container-free-your-mind span {
+        font-size: 7.375rem;
+    }
+
+    /* PORTFOLIO */
 
     .headline-portfolio .titulo {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: left;
-    }
-
-    .headline-portfolio .titulo {
-        font-size: 6rem;
+        font-size: 7.375rem;    
     }
 
     .headline-portfolio .descricao {
-        width: 100%;
-        text-align: right;
-        font-size: 1.4rem;
+        font-size: 1.75rem;
     }
 
-    .container-case {
-        gap: 2rem;
-    }
-
-    .case1,
-    .case3 {
-        flex-direction: column;
-        gap: 1rem;
-        height: auto;
-        justify-content: center;
-    }
-
-    .case2, 
-    .case4 {
-        flex-direction: column-reverse;
-        gap: 1rem;
-        height: auto;
-        height: auto;
-        justify-content: center;
-    }
-    
-    .imagens-case {
-        width: 100%;
-        height: 60vh
-    }
-
-    .textos-case {
-        width: 100%;
-        height: 35vh;
-    }
-
-    /************************** CONTATO ***/
-    .contato {
-        padding: 0rem 1rem 2rem 1rem;
-        height: auto;
-    }
-
-    .container-contato {
-        width: 100%;
-        height: auto;
-    }
-
-    .headline-contato {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .titulo-contato {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: left;
-    }
-
-    .titulo-contato h1 {
-        font-size: 6rem;
-    }
-
-    .descricao-contato {
-        width: 100%;
-        text-align: right;
-        font-size: 1.4rem;
-    }
-
-    .descricao-contato a {
-        text-decoration: none;
-        color: var(--color-black);
-        font-size: 1.5rem;
-        letter-spacing: 1.5px;
-        line-height: 1.4;
-        font-weight: bold;
-    }
-
-
-    .conteudo-contato {
-        padding-top: 2rem;
-        flex-direction: column-reverse;
-    }
-
-    .logo-contato {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .logo-contato img{
-        width: 100%;
-        max-height: 500px;
-        object-fit: cover;
-    }
-
-    .formulario-contato {
-        width: 100%;
-    }
-
-    .credits-column {
-        width: auto;
-        text-align: right;
-        margin-top: 0;
-    }
 }

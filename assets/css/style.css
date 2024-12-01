@@ -610,6 +610,7 @@ a {
 .text-headline-skills h2 {
     font-family: var(--font-grande);
     font-size: 3rem;
+    margin-bottom: 1.875rem;
 }
 
 .text-headline-skills p {
@@ -619,6 +620,7 @@ a {
     line-height: 1.4;
     letter-spacing: 1.5px;
     max-width: 900px;
+    margin-bottom: 1.875rem;
 }
 
 .conteudo-skills {
@@ -917,28 +919,6 @@ a {
     font-weight: lighter;
     font-family: var(--font-grande);
     text-decoration: none;
-}
-
-@media (max-width: 768px) {
-    .headline-portfolio {
-        flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
-        text-align: center;
-        padding: 2rem 0;
-    }
-
-    .headline-portfolio .titulo {
-        width: 100%;
-        font-size: 6rem;
-        text-align: center;
-    }
-
-    .headline-portfolio .descricao {
-        width: 100%;
-        text-align: center;
-        font-size: 1.8rem;
-    }
 }
 
 .container-case {
