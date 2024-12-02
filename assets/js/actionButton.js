@@ -37,6 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Ação ao clicar no botão do WhatsApp
     whatsappButton.addEventListener('click', function () {
-        window.open('https://wa.me/+51969259345', '_blank');
+        window.open('https://wa.me/51969259345?text=Hola%2C%20vengo%20de%20ricardolaurito.dev%20y%20tengo%20un%20proyecto%20o%20idea%20para%20desarrollar%20de%20forma%20incre%C3%ADble.', '_blank');
     });
 });
