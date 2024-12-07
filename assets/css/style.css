@@ -1548,6 +1548,7 @@ h1:hover,
 .titulo-contato h1:hover {
     background: linear-gradient(45deg, var(--color-destaque1), var(--color-destaque2));
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
