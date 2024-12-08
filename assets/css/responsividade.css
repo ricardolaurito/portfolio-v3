@@ -379,7 +379,7 @@
     /* Header ajustado */
     .header {        
         padding: 2.25rem 1.25rem;
-        height: 4rem;
+        height: 5rem;
         width: 100vw;
         display: flex; 
         align-items: center;
@@ -416,7 +416,7 @@
     }
 
     .titulo-inicio {
-        font-size: 1.5rem;
+        font-size: 1.375rem;
         margin-bottom: 1.25rem;
         text-align: center;
         position: relative;        
