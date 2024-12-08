@@ -274,7 +274,7 @@
     }
 
     .titulo-inicio {
-        font-size: 1.625rem;
+        font-size: 1.5rem;
         margin-bottom: 1.25rem;
         text-align: center;
         position: relative;        
@@ -343,15 +343,10 @@
         width: 100%;
         padding: 0 1rem;
     }
-
-    .textos-sobre h2 {
-        font-size: 1.8rem;
-        margin: 2rem 0;
-        text-align: center;
-    }
+    
 
     .textos-sobre p {
-        font-size: 1rem;
+        font-size: 1.25rem;
         line-height: 1.6;
         text-align: justify;
     }
