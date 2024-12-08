@@ -463,7 +463,8 @@ a {
     font-size: 5rem;
     text-transform: uppercase;
     display: flex;
-    align-items: center;    
+    align-items: center; 
+       
 }
 
 .headline-scroll .divisor {
