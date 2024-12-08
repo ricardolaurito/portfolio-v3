@@ -301,7 +301,7 @@
     }
 
     .quote {
-        display: none;
+        /* display: none; */
     }
 
     .qr-code {
