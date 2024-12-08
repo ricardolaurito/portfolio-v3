@@ -408,7 +408,7 @@
     }
 
     .titulo-inicio {
-        font-size: 1.625rem;
+        font-size: 26px;
         margin-bottom: 1.25rem;
         text-align: center;
         position: relative;        
@@ -416,7 +416,7 @@
     }
 
     .destaque-inicio {
-        font-size: 1.25rem;
+        font-size: 1.5625rem;
     }
 
     .paragrafo-inicio {
