@@ -378,14 +378,11 @@
 
     /* Header ajustado */
     .header {        
-        padding: 2.25rem 2rem;
+        padding: 2.25rem 1.125rem;
         height: 5rem;
         width: 100%;
         display: flex;
-        align-items: center;  
-        justify-content: space-around;  
-        
-          
+        align-items: center;    
     }
 
     /* Navegação */
