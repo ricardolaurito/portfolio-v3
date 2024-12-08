@@ -382,8 +382,10 @@
         height: 5rem;
         width: 100%;
         display: flex;
+        margin: 0 auto;
+        justify-content: space-between
         align-items: center;
-        border: var(--color-destaque2) 1px solid;    
+            
     }
 
     /* Navegação */
@@ -391,7 +393,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         gap: 1rem;        
         
     }
