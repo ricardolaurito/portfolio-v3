@@ -291,8 +291,7 @@
     .paragrafo-inicio p {
         font-size: 1.375rem;
         max-width: 85vw;        
-        width: 100%;
-        height: 100%;
+        width: 100%;        
         text-align: center;
         line-height: 1.6;
         position: relative;
@@ -313,7 +312,7 @@
         flex-direction: column;
         align-items: center;
         padding-top: 1rem;
-        margin-top: 5.625rem;          
+        /* margin-top: 90px;           */
     }
 
     .headline-sobre {
