@@ -356,9 +356,6 @@
 
 @media (max-width: 640px) {
       
-    
-    
-
     /* Container principal */
     .container {
         display: flex;
@@ -408,7 +405,7 @@
     }
 
     .titulo-inicio {
-        font-size: 26px;
+        font-size: 1.625rem;
         margin-bottom: 1.25rem;
         text-align: center;
         position: relative;        
@@ -416,7 +413,7 @@
     }
 
     .destaque-inicio {
-        font-size: 1.5625rem;
+        font-size: 1.625rem;
     }
 
     .paragrafo-inicio {
