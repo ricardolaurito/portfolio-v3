@@ -378,9 +378,9 @@
 
     /* Header ajustado */
     .header {        
-        padding: 2.25rem 1.25rem;
-        height: 5rem;
-        width: 100%;
+        padding: 2.25rem 1.875rem;
+        height: 4rem;
+        width: 100vw;
         display: flex;
         margin: 0 auto;
         justify-content: space-between
