@@ -290,7 +290,7 @@
     }
 
     .paragrafo-inicio p {
-        font-size: 1.375rem;
+        font-size: 1.625rem;
         max-width: 85vw;        
         width: 100%;        
         text-align: center;
@@ -318,7 +318,7 @@
     }
 
     .headline-sobre {
-        margin-bottom: 3rem;
+        
         width: 100%;
         text-align: center;
     }
@@ -331,7 +331,7 @@
 
     .headline-scroll span {
         font-size: 5rem;
-        margin-top: 10px;            
+                   
     }
     .headline-sobre span {
         font-size: 1.5rem;
