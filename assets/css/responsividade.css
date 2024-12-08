@@ -788,17 +788,24 @@
 
     .formulario-contato {
         width: 100%;
+        min-width: 300px;        
     }
 
     .formulario-contato h2 {
-        font-size: 1.5rem;
-        margin: 1.5rem 0;
-        text-align: center;
+        font-size: 2rem;
+        width: 100%;        
+    }
+
+    .formulario-contato p {
+        margin-bottom: 40px;
+        margin-top: 30px;
+               
     }
 
     .input-container {
         width: 100%;
         margin-bottom: 1rem;
+
     }
 
     /* FOOTER */
@@ -827,16 +834,18 @@
 
     .social-links {
         justify-content: center;
+        align-items: start;        
         gap: 1.5rem;
     }
 
     .social-links li {
-        text-align: center;
+        text-align: center;        
     }
 
     .credits-column p {
-        margin: 1rem auto;
+        margin: 5rem auto;
         width: 100%;
+        max-width: 300px;
         text-align: center;
         font-size: 0.9rem;
     }
