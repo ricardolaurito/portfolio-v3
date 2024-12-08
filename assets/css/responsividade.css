@@ -238,8 +238,8 @@
 
     /* Header ajustado */
     .header {        
-        padding: 36px 18px;
-        height: 80px;
+        padding: 2.25rem 1.125rem;
+        height: 5rem;
         width: 100%;
         display: flex;
         align-items: center;  
@@ -277,7 +277,7 @@
         margin-bottom: 1.25rem;
         text-align: center;
         position: relative;
-        padding-top: 150px;
+        /* padding-top: 150px; */
         width: 100%;
     }
 
