@@ -455,22 +455,28 @@
     }
 
     .headline-sobre {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         text-align: center;
+        width: 100%;
+        margin-bottom: 3rem;
     }
 
     .headline-scroll .divisor {
         width: 10px;
         height: 10px;
-         
     }
 
     .headline-sobre span {
-        font-size: 2rem;
+        font-size: 1.625rem;
+        padding: 5px;
+        /* margin: 5px; */
     }
 
     .textos-sobre h1 {
-        font-size: 2rem;
+        font-size: 2.625rem;
           
     }
 
@@ -484,7 +490,7 @@
     
 
     .textos-sobre p {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         line-height: 1.6;
         text-align: justify;
     }
