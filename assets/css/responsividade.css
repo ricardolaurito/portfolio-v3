@@ -433,8 +433,9 @@
     }
 
     .card-titulo h1 {
-        font-size: 18px;
-        margin-bottom: 0.75rem;
+        font-size: 1.25rem;
+        align-items: center;
+        justify-content: center;
         color: var(--color-texto);
     }
     .container-free-your-mind span {
