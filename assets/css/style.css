@@ -119,7 +119,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -158,7 +158,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 20px;
+    margin-right: 1.5625rem;
     position: relative;
     z-index: 100;
     
@@ -385,6 +385,7 @@ a {
 .complemento-inicio .qr-code {
     width: 100px;
     margin-top: 2rem;
+    margin-right: 1.5625rem;
     opacity: .2;
     transition: all .5s ease-in-out;
 }
@@ -392,7 +393,7 @@ a {
 .complemento-inicio .qr-code:hover {
     opacity: 1;
     scale: 2.2;
-    margin-right: 50px;
+    margin-right: 5rem;
 }
 
 .quote {
@@ -837,6 +838,7 @@ a {
     width: 100%;
     height: 100%;
     display: flex;
+    margin-right: 1.875rem;
     flex-direction: column;
     align-items: left;
     justify-content: center;
