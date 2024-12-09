@@ -809,6 +809,10 @@
 
     }
 
+    .logo-contato {
+        display: none;
+    }
+
     /* FOOTER */
     .footer {
         padding: 2rem 1rem;
