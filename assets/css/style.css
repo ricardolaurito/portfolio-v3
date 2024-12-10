@@ -153,6 +153,7 @@ a {
 
 .logo img {
     width: 12rem;
+    height: auto;
 }
 
 /* Menu */
@@ -1261,7 +1262,8 @@ textarea.valid {
 }
 
 .logo-column img {
-    width: 150px;
+    width: 9.375rem;
+    height: auto;
     
 }
 

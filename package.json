@@ -1,0 +1,32 @@
+{
+  "name": "Portfolio - Ricardo Laurito",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Soluciones digitales personalizadas para tu negocio. Desarrollo web, automatización de procesos, diseño UI/UX, hosting y mejora de sitios web.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Desarrolo web",
+    "Desarrolo Frontend",
+    "Desarrolo Backend",
+    "Diseño pagina web",
+    "Desarrolo de paginas web",
+    "Automatización de procesos",
+    "Diseño UI/UX",
+    "Hosting",
+    "Hospedaje de sitios web",
+    "Mejoramiento de sitios web ya existentes",
+    "Otimización de sitios web",
+    "Correos empresariales"
+  ],
+  "author": "Ricardo Laurito",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-webp": "^5.0.0",
+    "imagemin-webp": "^8.0.0"
+  }
+}
