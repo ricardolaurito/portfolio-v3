@@ -385,8 +385,7 @@ a {
 
 .complemento-inicio .qr-code {
     width: 100px;
-    margin-top: 2rem;
-    margin-right: 1.5625rem;
+    margin-top: 2rem;    
     opacity: .2;
     transition: all .5s ease-in-out;
 }
