@@ -1,4 +1,4 @@
-/******************** Fontes usadas */
+/******************** Fontes usadas *******************/
 @import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
 @import url('clash-grotesk.css');
 
@@ -152,7 +152,7 @@ a {
 }
 
 .logo img {
-    width: 12rem;
+    width: 15.625rem;
 }
 
 /* Menu */
@@ -1261,7 +1261,7 @@ textarea.valid {
 }
 
 .logo-column img {
-    width: 150px;
+    width: 12.5rem;
     
 }
 
