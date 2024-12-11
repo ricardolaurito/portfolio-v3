@@ -501,6 +501,12 @@
         AOS.init();
     </script>
 
+    <script>
+        window.onload = function() {
+            history.replaceState(null, null, window.location.pathname);
+        };
+    </script>
+
     <script defer src="assets/js/menu.js"></script>
     <script defer src="assets/js/slideSobre.js"></script>
     <script defer src="assets/js/slidePortfolio.js"></script>
