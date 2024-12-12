@@ -408,7 +408,7 @@
         font-size: 1.625rem;
         margin-bottom: 1.25rem;
         text-align: center;
-        position: relative;        
+        /* position: relative;         */
         width: 100%;
     }
 
