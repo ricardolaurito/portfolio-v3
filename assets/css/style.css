@@ -1751,38 +1751,6 @@ h1:hover,
     }
 }
 
-/* Mobile */
-@media (max-width: 480px) {
-    .headline-portfolio .titulo {
-        font-size: 4rem;
-    }
-
-    .headline-portfolio .descricao {
-        font-size: 1.6rem;
-        padding: 0 1rem;
-    }
-
-    .titulo-contato h1 {
-        font-size: 4rem;
-    }
-
-    .descricao-contato {
-        font-size: 1.6rem;
-        padding: 0 1rem;
-    }
-
-    .container-portfolio,
-    .container-contato {
-        padding: 4rem 1rem;
-    }
-
-    .headline-portfolio,
-    .headline-contato {
-        gap: 1.5rem;
-        padding: 1rem 0;
-    }
-}
-
 /* Form Validation Styles */
 .form-group {
     position: relative;
