@@ -1842,3 +1842,10 @@ textarea.valid {
 input[name="phone"] {
     flex: 1;
 }
+
+.logoport {
+    width: 300px;
+    padding-top: 20px;
+    
+    
+}
